@@ -36,7 +36,7 @@ const findBest = async () => {
             const score = findScore(pegiResponse.data);
     
             if (score >= minScore) {
-                console.log(marketId, `${price}`, score);
+                console.log(marketId, `$${price}`, score);
                 found.push(pegiUrl);
             } else {
                 //console.log(marketId, `Score too low: ${score}.`);
